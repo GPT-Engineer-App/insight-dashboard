@@ -3,7 +3,7 @@ import { Box, Heading, Text, Avatar } from "@chakra-ui/react";
 
 const Profile = () => {
   return (
-    <Box maxWidth="600px" mx="auto" mt={8}>
+    <Box maxWidth="600px" mx="auto" mt={8} p={8}>
       <Avatar size="2xl" name="John Doe" src="https://bit.ly/dan-abramov" mx="auto" />
       <Heading as="h1" size="xl" textAlign="center" mt={4} mb={8}>
         John Doe
