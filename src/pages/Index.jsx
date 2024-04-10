@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Flex, Heading, Text, Stat, StatLabel, StatNumber, StatHelpText, StatArrow, SimpleGrid, Image } from "@chakra-ui/react";
 import { FaChartLine, FaChartPie, FaChartBar, FaUsers } from "react-icons/fa";
+import Sidebar from "../components/Sidebar";
 
 const Index = () => {
   const metrics = [
@@ -35,7 +36,9 @@ const Index = () => {
   ];
 
   return (
-    <Box p={8}>
+    <Flex>
+      <Sidebar />
+      <Box p={8} flex={1}>
       <Heading as="h1" size="xl" mb={8}>
         Business Dashboard
       </Heading>
@@ -74,6 +77,7 @@ const Index = () => {
         </Box>
       </Flex>
     </Box>
+    </Flex>
   );
 };
 
